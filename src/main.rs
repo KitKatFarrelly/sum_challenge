@@ -15,7 +15,7 @@ impl<T: IntoIterator<Item=A>, A: Add<Output = A> + Default> generic_sum<A> for T
 
         while let Some(current) = iterator.next()
         {
-            ret_val = ret_val + current
+            ret_val = ret_val + current;
         }
         ret_val
     }
